@@ -1,13 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Smart Drowsiness & Blind-Spot Detection</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Smart Drowsiness &amp; Blind-Spot Detection</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -106,12 +106,6 @@ h3{margin-bottom:10px}
   border-left:3px solid #ff5a36;padding:16px 20px;background:#0d1016;
   margin-top:25px;border-radius:0 10px 10px 0;color:#d8dae0
 }
-.dashboard{
-  min-height:330px;border:1px dashed #3a404c;border-radius:18px;
-  background:linear-gradient(145deg,#0c0f15,#11151d);
-  display:grid;place-items:center;text-align:center;padding:30px;margin-top:35px
-}
-.dashboard .mock{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;width:min(700px,100%)}
 .stat{padding:20px;border:1px solid #292e38;background:#0b0e13;border-radius:12px}
 .stat b{display:block;font-size:1.5rem;color:#ff6a46}
 .alert-box{
@@ -125,224 +119,188 @@ footer{padding:35px 0;text-align:center;color:#777d88}
  .grid,.grid.two,.team{grid-template-columns:1fr}
  .hero{min-height:850px}
  .car{transform:scale(.7);right:-60px}
- .dashboard .mock{grid-template-columns:1fr}
-}
+ }
 </style>
 </head>
-
 <body>
-
 <header class="hero">
-  <div class="road"></div><div class="lane"></div>
-  <div class="car"><div class="light l1"></div><div class="light l2"></div><div class="wheel w1"></div><div class="wheel w2"></div></div>
-
-  <div class="container hero-content">
-    <div class="badge">IoT-Based Driver Safety System</div>
-    <h1>SMART DROWSINESS &<br><span>BLIND-SPOT DETECTION</span><br>WITH EMERGENCY ALERT</h1>
-    <p>
+<div class="road"></div><div class="lane"></div>
+<div class="car"><div class="light l1"></div><div class="light l2"></div><div class="wheel w1"></div><div class="wheel w2"></div></div>
+<div class="container hero-content">
+<div class="badge">IoT-Based Driver Safety System</div>
+<h1>SMART DROWSINESS &amp;<br/><span>BLIND-SPOT DETECTION</span><br/>WITH EMERGENCY ALERT</h1>
+<p>
       A low-cost smart vehicle safety system that detects prolonged driver
       eye closure, monitors nearby objects in the blind-spot region,
       warns the driver and escalates an emergency when the driver does not respond.
     </p>
-    <div class="buttons">
-      <a class="btn primary" href="#how-it-works">Explore System</a>
-      <a class="btn" href="#dashboard">View Dashboard</a>
-    </div>
-  </div>
-</header>
+<div class="buttons">
+<a class="btn primary" href="#how-it-works">Explore System</a>
 
+</div>
+</div>
+</header>
 <section id="introduction">
 <div class="container">
-  <div class="section-tag">01 · Introduction</div>
-  <h2>Making Every Drive Safer</h2>
-  <p class="muted">
+<div class="section-tag">01 · Introduction</div>
+<h2>Making Every Drive Safer</h2>
+<p class="muted">
     Driver drowsiness and blind-spot hazards are two common risks on the road.
     Our project combines driver monitoring, proximity detection and emergency
     communication into one compact ESP32-based safety system.
   </p>
-  <div class="highlight"><b>Core idea:</b> Detect the risk → warn the driver → verify response → escalate if necessary.</div>
+<div class="highlight"><b>Core idea:</b> Detect the risk → warn the driver → verify response → escalate if necessary.</div>
 </div>
 </section>
-
 <section id="problem">
 <div class="container">
-  <div class="section-tag">02 · Real-Life Problem</div>
-  <h2>Small Delays Can Become Big Risks</h2>
-  <div class="grid">
-    <div class="card"><div class="icon">😴</div><h3>Driver Drowsiness</h3><p class="muted">Prolonged eye closure can reduce driver awareness and reaction time.</p></div>
-    <div class="card"><div class="icon">🚗</div><h3>Blind-Spot Objects</h3><p class="muted">Nearby vehicles or objects may remain outside the driver's direct field of view.</p></div>
-    <div class="card"><div class="icon">⚠️</div><h3>No Driver Response</h3><p class="muted">A warning is not enough if the driver remains unresponsive after an alert.</p></div>
-  </div>
+<div class="section-tag">02 · Real-Life Problem</div>
+<h2>Small Delays Can Become Big Risks</h2>
+<div class="grid">
+<div class="card"><div class="icon">😴</div><h3>Driver Drowsiness</h3><p class="muted">Prolonged eye closure can reduce driver awareness and reaction time.</p></div>
+<div class="card"><div class="icon">🚗</div><h3>Blind-Spot Objects</h3><p class="muted">Nearby vehicles or objects may remain outside the driver's direct field of view.</p></div>
+<div class="card"><div class="icon">⚠️</div><h3>No Driver Response</h3><p class="muted">A warning is not enough if the driver remains unresponsive after an alert.</p></div>
+</div>
 </div>
 </section>
-
 <section id="solution">
 <div class="container">
-  <div class="section-tag">03 · Our Solution</div>
-  <h2>One System. Multiple Layers of Protection.</h2>
-  <p class="muted">
+<div class="section-tag">03 · Our Solution</div>
+<h2>One System. Multiple Layers of Protection.</h2>
+<p class="muted">
     The ESP32 collects sensor data, identifies risk conditions and activates
     appropriate responses. Local alerts are used first, while Telegram is used
     for emergency escalation.
   </p>
-  <div class="grid two">
-    <div class="card"><h3>Driver Monitoring</h3><p class="muted">IR eye-blink sensor monitors the driver's eye state and identifies prolonged closure.</p></div>
-    <div class="card"><h3>Blind-Spot Monitoring</h3><p class="muted">An ultrasonic sensor measures the distance of nearby objects in the monitored blind-spot region.</p></div>
-    <div class="card"><h3>Local Warning</h3><p class="muted">Buzzer and vibration motor provide immediate driver feedback.</p></div>
-    <div class="card"><h3>Emergency Escalation</h3><p class="muted">If the driver does not respond, the system can enter emergency mode and send Telegram alerts.</p></div>
-  </div>
+<div class="grid two">
+<div class="card"><h3>Driver Monitoring</h3><p class="muted">IR eye-blink sensor monitors the driver's eye state and identifies prolonged closure.</p></div>
+<div class="card"><h3>Blind-Spot Monitoring</h3><p class="muted">An ultrasonic sensor measures the distance of nearby objects in the monitored blind-spot region.</p></div>
+<div class="card"><h3>Local Warning</h3><p class="muted">Buzzer and vibration motor provide immediate driver feedback.</p></div>
+<div class="card"><h3>Emergency Escalation</h3><p class="muted">If the driver does not respond, the system can enter emergency mode and send Telegram alerts.</p></div>
+</div>
 </div>
 </section>
-
 <section id="how-it-works">
 <div class="container">
-  <div class="section-tag">04 · How It Works</div>
-  <h2>Detection → Warning → Response → Emergency</h2>
-  <div class="flow">
-    <div class="card step"><div class="icon">01</div><h3>Detect</h3><p class="muted">Sensors continuously monitor eye state and nearby objects.</p></div>
-    <div class="arrow">→</div>
-    <div class="card step"><div class="icon">02</div><h3>Warn</h3><p class="muted">A buzzer and vibration motor alert the driver locally.</p></div>
-    <div class="arrow">→</div>
-    <div class="card step"><div class="icon">03</div><h3>Verify Response</h3><p class="muted">The system checks whether the driver returns to a safe state.</p></div>
-    <div class="arrow">→</div>
-    <div class="card step"><div class="icon">04</div><h3>Escalate</h3><p class="muted">If there is no response, emergency notifications can be triggered.</p></div>
-  </div>
-  <div class="highlight"><b>Drowsiness example:</b> Eye remains closed for approximately 6 seconds → buzzer + vibration activate → eye opens → alert resets.</div>
+<div class="section-tag">04 · How It Works</div>
+<h2>Detection → Warning → Response → Emergency</h2>
+<div class="flow">
+<div class="card step"><div class="icon">01</div><h3>Detect</h3><p class="muted">Sensors continuously monitor eye state and nearby objects.</p></div>
+<div class="arrow">→</div>
+<div class="card step"><div class="icon">02</div><h3>Warn</h3><p class="muted">A buzzer and vibration motor alert the driver locally.</p></div>
+<div class="arrow">→</div>
+<div class="card step"><div class="icon">03</div><h3>Verify Response</h3><p class="muted">The system checks whether the driver returns to a safe state.</p></div>
+<div class="arrow">→</div>
+<div class="card step"><div class="icon">04</div><h3>Escalate</h3><p class="muted">If there is no response, emergency notifications can be triggered.</p></div>
+</div>
+<div class="highlight"><b>Drowsiness example:</b> Eye remains closed for approximately 6 seconds → buzzer + vibration activate → eye opens → alert resets.</div>
 </div>
 </section>
-
 <section id="hardware">
 <div class="container">
-  <div class="section-tag">05 · Hardware Components</div>
-  <h2>Compact Hardware, Practical Safety</h2>
-  <div class="grid">
-    <div class="card"><div class="icon">🔲</div><h3>ESP32</h3><p class="muted">Main controller for sensor processing, connectivity and system logic.</p></div>
-    <div class="card"><div class="icon">👁️</div><h3>IR Eye-Blink Sensor</h3><p class="muted">Used to monitor the driver's eye state.</p></div>
-    <div class="card"><div class="icon">📡</div><h3>Ultrasonic Sensor</h3><p class="muted">Measures distance to nearby objects in the monitored blind-spot region.</p></div>
-    <div class="card"><div class="icon">🔊</div><h3>Buzzer</h3><p class="muted">Provides an audible warning to the driver.</p></div>
-    <div class="card"><div class="icon">📳</div><h3>Vibration Motor</h3><p class="muted">Provides tactile feedback as an additional warning layer.</p></div>
-    <div class="card"><div class="icon">📶</div><h3>Wi-Fi</h3><p class="muted">Enables cloud dashboard updates and Telegram communication.</p></div>
-  </div>
+<div class="section-tag">05 · Hardware Components</div>
+<h2>Compact Hardware, Practical Safety</h2>
+<div class="grid">
+<div class="card"><div class="icon">🔲</div><h3>ESP32</h3><p class="muted">Main controller for sensor processing, connectivity and system logic.</p></div>
+<div class="card"><div class="icon">👁️</div><h3>IR Eye-Blink Sensor</h3><p class="muted">Used to monitor the driver's eye state.</p></div>
+<div class="card"><div class="icon">📡</div><h3>Ultrasonic Sensor</h3><p class="muted">Measures distance to nearby objects in the monitored blind-spot region.</p></div>
+<div class="card"><div class="icon">🔊</div><h3>Buzzer</h3><p class="muted">Provides an audible warning to the driver.</p></div>
+<div class="card"><div class="icon">📳</div><h3>Vibration Motor</h3><p class="muted">Provides tactile feedback as an additional warning layer.</p></div>
+<div class="card"><div class="icon">📶</div><h3>Wi-Fi</h3><p class="muted">Enables cloud dashboard updates and Telegram communication.</p></div>
+</div>
 </div>
 </section>
-
 <section id="architecture">
 <div class="container">
-  <div class="section-tag">06 · System Architecture</div>
-  <h2>Connected Safety Architecture</h2>
-  <div class="grid two">
-    <div class="card">
-      <h3>Vehicle Layer</h3>
-      <p class="muted">IR eye sensor + ultrasonic sensor → ESP32 → buzzer + vibration motor</p>
-    </div>
-    <div class="card">
-      <h3>Connectivity Layer</h3>
-      <p class="muted">ESP32 → Wi-Fi → Arduino Cloud dashboard + Telegram Bot API</p>
-    </div>
-  </div>
-  <div class="code" style="margin-top:22px">
-IR Eye Sensor ─────┐<br>
-                   ├──► ESP32 ───► Buzzer<br>
-Ultrasonic Sensor ─┘       │ └────► Vibration Motor<br>
-                           │<br>
-                           ├────► Arduino Cloud Dashboard<br>
-                           │<br>
+<div class="section-tag">06 · System Architecture</div>
+<h2>Connected Safety Architecture</h2>
+<div class="grid two">
+<div class="card">
+<h3>Vehicle Layer</h3>
+<p class="muted">IR eye sensor + ultrasonic sensor → ESP32 → buzzer + vibration motor</p>
+</div>
+<div class="card">
+<h3>Connectivity Layer</h3>
+<p class="muted">ESP32 → Wi-Fi → Arduino Cloud dashboard + Telegram Bot API</p>
+</div>
+</div>
+<div class="code" style="margin-top:22px">
+IR Eye Sensor ─────┐<br/>
+                   ├──► ESP32 ───► Buzzer<br/>
+Ultrasonic Sensor ─┘       │ └────► Vibration Motor<br/>
+                           │<br/>
+                           ├────► Cloud connectivity<br/>
+                           │<br/>
                            └────► Telegram Emergency Alert
   </div>
 </div>
 </section>
-
 <section id="features">
 <div class="container">
-  <div class="section-tag">07 · Smart Features</div>
-  <h2>Designed Around Driver Response</h2>
-  <div class="grid">
-    <div class="card"><h3>⏱️ Timed Drowsiness Detection</h3><p class="muted">Continuous eye closure is evaluated instead of treating every short blink as drowsiness.</p></div>
-    <div class="card"><h3>📏 Distance-Based Warning</h3><p class="muted">Nearby objects can be categorized into safe, warning and danger ranges.</p></div>
-    <div class="card"><h3>🔔 Multi-Modal Alert</h3><p class="muted">Combines audible and tactile feedback for a stronger local warning.</p></div>
-    <div class="card"><h3>🚨 Response-Aware Escalation</h3><p class="muted">Emergency communication is triggered when a detected risk is not resolved.</p></div>
-    <div class="card"><h3>☁️ Cloud Monitoring</h3><p class="muted">System status and sensor information can be visualized through the dashboard.</p></div>
-    <div class="card"><h3>📲 Remote Notification</h3><p class="muted">Telegram provides a communication channel for emergency alerts.</p></div>
-  </div>
+<div class="section-tag">07 · Smart Features</div>
+<h2>Designed Around Driver Response</h2>
+<div class="grid">
+<div class="card"><h3>⏱️ Timed Drowsiness Detection</h3><p class="muted">Continuous eye closure is evaluated instead of treating every short blink as drowsiness.</p></div>
+<div class="card"><h3>📏 Distance-Based Warning</h3><p class="muted">Nearby objects can be categorized into safe, warning and danger ranges.</p></div>
+<div class="card"><h3>🔔 Multi-Modal Alert</h3><p class="muted">Combines audible and tactile feedback for a stronger local warning.</p></div>
+<div class="card"><h3>🚨 Response-Aware Escalation</h3><p class="muted">Emergency communication is triggered when a detected risk is not resolved.</p></div>
+<div class="card"><h3>☁️ Cloud Monitoring</h3><p class="muted">System status and sensor information can be visualized through the dashboard.</p></div>
+<div class="card"><h3>📲 Remote Notification</h3><p class="muted">Telegram provides a communication channel for emergency alerts.</p></div>
 </div>
-</section>
-
-<section id="dashboard">
-<div class="container">
-  <div class="section-tag">08 · Live Dashboard</div>
-  <h2>Real-Time Vehicle Safety Dashboard</h2>
-  <p class="muted">Arduino Cloud can be used to visualize the system's live operating state.</p>
-  <div class="dashboard">
-    <div style="width:100%">
-      <div class="mock">
-        <div class="stat"><span>Eye Status</span><b>OPEN</b></div>
-        <div class="stat"><span>Drowsiness</span><b>SAFE</b></div>
-        <div class="stat"><span>Blind-Spot</span><b>-- cm</b></div>
-        <div class="stat"><span>Risk Level</span><b>LOW</b></div>
-        <div class="stat"><span>Buzzer</span><b>OFF</b></div>
-        <div class="stat"><span>Vibration</span><b>OFF</b></div>
-      </div>
-      <p class="muted" style="margin-top:20px">Dashboard preview — replace this area with the final Arduino Cloud dashboard screenshot.</p>
-    </div>
-  </div>
 </div>
 </section>
 
 <section id="emergency">
 <div class="container">
-  <div class="section-tag">09 · Emergency Alert</div>
-  <h2>When the Driver Doesn't Respond</h2>
-  <div class="alert-box">
-    <h3>Emergency escalation flow</h3>
-    <p class="muted">
+<div class="section-tag">08 · Emergency Alert</div>
+<h2>When the Driver Doesn't Respond</h2>
+<div class="alert-box">
+<h3>Emergency escalation flow</h3>
+<p class="muted">
       Risk detected → Local warning → Response check → Emergency mode →
       Telegram notification → repeated notification until acknowledgement.
     </p>
-  </div>
-  <div class="grid two">
-    <div class="card"><h3>Local Safety Response</h3><p class="muted">The driver is first alerted using the buzzer and vibration motor.</p></div>
-    <div class="card"><h3>Remote Communication</h3><p class="muted">Telegram can communicate the emergency condition to a configured recipient.</p></div>
-  </div>
+</div>
+<div class="grid two">
+<div class="card"><h3>Local Safety Response</h3><p class="muted">The driver is first alerted using the buzzer and vibration motor.</p></div>
+<div class="card"><h3>Remote Communication</h3><p class="muted">Telegram can communicate the emergency condition to a configured recipient.</p></div>
+</div>
 </div>
 </section>
-
 <section id="future">
 <div class="container">
-  <div class="section-tag">10 · Future Scope</div>
-  <h2>Where We Can Take It Next</h2>
-  <div class="grid">
-    <div class="card"><h3>📍 GPS Integration</h3><p class="muted">Add location sharing during emergency events.</p></div>
-    <div class="card"><h3>📞 Advanced Communication</h3><p class="muted">Explore additional emergency communication channels.</p></div>
-    <div class="card"><h3>🤖 Smarter Detection</h3><p class="muted">Improve driver-state detection with computer vision and machine learning.</p></div>
-    <div class="card"><h3>🚘 Vehicle Integration</h3><p class="muted">Integrate with vehicle systems for richer safety responses.</p></div>
-    <div class="card"><h3>📊 Data Analytics</h3><p class="muted">Analyze driving and alert patterns over time.</p></div>
-    <div class="card"><h3>🌐 Scalable Platform</h3><p class="muted">Develop a broader connected road-safety ecosystem.</p></div>
-  </div>
+<div class="section-tag">09 · Future Scope</div>
+<h2>Where We Can Take It Next</h2>
+<div class="grid">
+<div class="card"><h3>📍 GPS Integration</h3><p class="muted">Add location sharing during emergency events.</p></div>
+<div class="card"><h3>📞 Advanced Communication</h3><p class="muted">Explore additional emergency communication channels.</p></div>
+<div class="card"><h3>🤖 Smarter Detection</h3><p class="muted">Improve driver-state detection with computer vision and machine learning.</p></div>
+<div class="card"><h3>🚘 Vehicle Integration</h3><p class="muted">Integrate with vehicle systems for richer safety responses.</p></div>
+<div class="card"><h3>📊 Data Analytics</h3><p class="muted">Analyze driving and alert patterns over time.</p></div>
+<div class="card"><h3>🌐 Scalable Platform</h3><p class="muted">Develop a broader connected road-safety ecosystem.</p></div>
+</div>
 </div>
 </section>
-
 <section id="team">
 <div class="container">
-  <div class="section-tag">11 · Project & Team</div>
-  <h2>SURAKSHA KAVACH</h2>
-  <p class="muted">Building technology for safer roads.</p>
-  <div class="team">
-    <div class="member"><b>Shlok Verma</b><br><span class="muted">Team Leader</span></div>
-    <div class="member"><b>Vishnu</b><br><span class="muted">Team Member</span></div>
-    <div class="member"><b>Shaurya</b><br><span class="muted">Team Member</span></div>
-    <div class="member"><b>Pankaj</b><br><span class="muted">Team Member</span></div>
-    <div class="member"><b>Lakesh</b><br><span class="muted">Team Member</span></div>
-    <div class="member"><b>Brifin</b><br><span class="muted">Team Member</span></div>
-  </div>
+<div class="section-tag">10 · Project &amp; Team</div>
+<h2>SURAKSHA KAVACH</h2>
+<p class="muted">Building technology for safer roads.</p>
+<div class="team">
+<div class="member"><b>Shlok Verma</b><br/><span class="muted">Team Leader</span></div>
+<div class="member"><b>Vishnu</b><br/><span class="muted">Team Member</span></div>
+<div class="member"><b>Shaurya</b><br/><span class="muted">Team Member</span></div>
+<div class="member"><b>Pankaj</b><br/><span class="muted">Team Member</span></div>
+<div class="member"><b>Lakesh</b><br/><span class="muted">Team Member</span></div>
+<div class="member"><b>Brifin</b><br/><span class="muted">Team Member</span></div>
+</div>
 </div>
 </section>
-
 <footer>
-  <div class="container">
-    <b>SMART DROWSINESS & BLIND-SPOT DETECTION WITH EMERGENCY ALERT</b><br>
-    <span>Detect. Alert. Respond. · Team Suraksha Kavach</span>
-  </div>
+<div class="container">
+<b>SMART DROWSINESS &amp; BLIND-SPOT DETECTION WITH EMERGENCY ALERT</b><br/>
+<span>Detect. Alert. Respond. · Team Suraksha Kavach</span>
+</div>
 </footer>
-
 </body>
 </html>
